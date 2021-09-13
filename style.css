@@ -1,0 +1,285 @@
+/* Importa o arquivo da fonte */
+@font-face {
+	font-family: Titulo;
+	src: url(./fontes/ANODETONOONE.TTF);
+}
+
+h1 {
+	font-family: Titulo;
+	font-size: 40px;
+	color: #ec9494;
+	-webkit-text-stroke: .5px black;
+}
+
+body {
+	/*background-image: url(./img/fundo.jpg);*/
+	background-color: #2C333D;
+}
+
+/* Posicionamento e tamanho das divs */
+#container{
+	width: 950px;
+	height: 600px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#fundo-game {
+	width: 950px;
+	height: 95vh;
+	background-image: url(./img/bgcidade2.png);
+	background-size: cover;
+	border-color: #FFF;
+	border-style: solid;
+}
+
+.botao-ui {
+	width: 200px;
+	height: 50px;
+	padding: 10px;
+	background-color: #ec9494;
+	color: #fff;
+	text-transform: uppercase;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+#jogador {
+	width: 200px;
+	height: 137px;
+	position: absolute;
+	left: 8px;
+	top: 179px;
+    background-image:url(./img/player.png);
+}
+
+#inimigo1 {
+	width: 220px;
+	height: 121px;
+	position: absolute;
+	left: 689px;
+	top: 250px;
+	background-image:url(./img/enemyplane.png);
+	
+}
+
+#inimigo2 {
+	width: 175px;
+	height: 121px;
+	position: absolute;
+	left: 775px;
+	top: 447px;
+	background-image: url(./img/enemycar.png);
+}
+
+#amigo {
+	width: 60px;
+	height: 93px;
+	position: absolute;
+	left: 10px;
+	top: 464px;
+	background-image:url(./img/frienddog.png);
+}
+
+#inicio {
+	width: 350px;
+	height: 200px;
+	background-color: #FFF;
+ 	margin-left: auto;
+    margin-right: auto;
+ 	margin-top: 100px;
+	text-align: center;
+	padding: 40px;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
+
+/* Animacoes */
+
+/* Animacao do jogador */
+.anima1 {
+	background-image: url(./img/player.png);
+	animation: player .5s steps(2) infinite; /* */
+    -webkit-animation: player .5s steps(2) infinite; /* Chrome, Safari */ 
+    -moz-animation: player .5s steps(2) infinite; /* Mozilla Firefox */
+    -ms-animation: player .5s steps(2) infinite; /* Explorer, Edge*/
+    -o-animation: player .5s steps(2) infinite; /* Opera */
+}
+@keyframes player {
+	from {background-position:0px;} /* Posicao inicial da imagem da animacao */
+	to {background-position:-400px;} /* Posicao final da imagem da animacao */
+}
+@-webkit-keyframes player {
+   from { background-position:0px; }
+     to { background-position: -400px; }
+}
+@-moz-keyframes player {
+   from { background-position:0px; }
+     to { background-position: -400px; }
+}
+@-ms-keyframes player {
+   from { background-position:0px; }
+     to { background-position: -400px; }
+}
+@-o-keyframes player {
+   from { background-position:0px; }
+     to { background-position: -400px; }
+}
+
+/* Animacao aviao */
+.anima2 {
+    background-image:url(./img/enemyplane.png);
+    animation: plane .5s steps(2) infinite;
+    -webkit-animation: plane .5s steps(2) infinite;
+    -moz-animation: plane .5s steps(2) infinite;
+    -ms-animation: plane .5s steps(2) infinite;
+    -o-animation: plane .5s steps(2) infinite; 
+}
+@keyframes plane {
+	from {background-position:0px;} /* Posicao inicial da imagem da animacao */
+	to {background-position:-440px;} /* Posicao final da imagem da animacao */
+}
+@-webkit-keyframes plane {
+   from { background-position:0px; }
+     to { background-position: -440px; }
+}
+@-moz-keyframes plane {
+   from { background-position:0px; }
+     to { background-position: -440px; }
+}
+@-ms-keyframes plane {
+   from { background-position:0px; }
+     to { background-position: -440px; }
+}
+@-o-keyframes plane {
+   from { background-position:0px; }
+     to { background-position: -440px; }
+}
+
+.anima-enemycar {
+	background-image: url(./img/enemycar.png);
+	animation: car .5s steps(2) infinite;
+	-webkit-animation: car .5s steps(2) infinite;
+	-moz-animation: car .5s steps(2) infinite;
+	-ms-animation: car .5s steps(2) infinite;
+	-o-animation: car .5s steps(2) infinite;
+}
+@keyframes car {
+	from {background-position: 0px;}
+	to {background-position: -350px;}
+}
+
+/* Animacao amigo */
+.anima-frienddog {
+	background-image:url(./img/frienddog.png);
+	animation:friend-dog .9s steps(10) infinite;
+	-webkit-animation: friend-dog .9s steps(10) infinite;
+       -moz-animation: friend-dog .9s steps(10) infinite;
+        -ms-animation: friend-dog .9s steps(10) infinite;
+         -o-animation: friend-dog .9s steps(10) infinite;
+}
+@keyframes friend-dog {
+	from {background-position:0px;}
+	to {background-position:-600px;}
+}
+@-webkit-keyframes friend-dog {
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+@-moz-keyframes friend-dog {
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+@-ms-keyframes friend-dog {
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+@-o-keyframes friend-dog {
+   from { background-position:    0px; }
+     to { background-position: -600px; }
+}
+
+
+
+/* Efeitos */
+#disparo {
+	width: 50px;
+	height: 13px;
+	position: absolute;
+	background-image: url(./img/disparo.png);
+}
+#explosao1 {
+	width: 15px;
+	height: 161px;
+	position: absolute;
+}
+#explosao2 {
+	width: 15px;
+	height: 161px;
+	position: absolute;	
+}
+#friend-died {
+	width: 82px;
+	height: 93px;
+	position: absolute;
+}
+.anima4 {
+	width: 82px;
+	height: 93px;
+	background-image: url(img/frienddie.png);
+	animation: blink 1s linear infinite;
+	-webkit-animation: blink 1s linear infinite;
+	-moz-animation: blink 1s linear infinite;
+	-ms-animation: blink 1s linear infinite;
+	-o-animation: blink 1s linear infinite;
+}
+@keyframes blink {
+	50% {opacity: 0;}
+}
+
+/* Placar */
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 10px;
+	top: 7px;
+}
+
+h2 {
+	font-family: Titulo;
+	font-size: 20px;
+	color: #ec9494
+}
+
+/* Energia */
+#energia {
+	width: 200px;
+	height: 49px;
+	position: absolute;
+	left: 750px;
+	top: 7px;	
+}
+
+/* Gamer over */
+
+h3 {
+	font-family: Titulo;
+	font-size: 20px;
+	color: #ec9494;
+
+}
+
+#fim {
+	width: 350px;
+	height: 200px;
+	background-color: #FFF;
+ 	margin-left: auto;
+    margin-right: auto;
+ 	margin-top: 100px;
+	text-align: center;
+	padding: 40px;
+	border-radius: 10px;
+	border: 2px solid #000;
+}
